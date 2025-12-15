@@ -4,4 +4,4 @@ Market Gateway is a FastAPI service that implements user authentication based on
 
 ## :question: Usage Instruction
 
-Add .env file containing environment variables that specify the keys, algorithm, and database connection.
+Add .env (check .env.example) file containing environment variables that specify the keys, algorithm, and database connection.
