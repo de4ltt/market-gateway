@@ -14,7 +14,7 @@ class RefreshRequest(BaseModel):
 
 class UserResponse(BaseModel):
     login: str
-    role: str
+    role: Optional[str] = None
     full_name: Optional[str] = None
 
     model_config = ConfigDict(from_attributes=True)

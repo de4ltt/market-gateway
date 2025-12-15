@@ -129,8 +129,8 @@ async def get_current_user_info(
 async def register_employee(
         employee_login: str = Form(...),
         password: str = Form(...),
-        role: str = Form(""),
-        full_name: str = Form(""),
+        role: str = Form(None),
+        full_name: str = Form(None),
         db: AsyncSession = Depends(get_db)
 ):
     existing = await crud.get_employee_by_login(db, employee_login)
